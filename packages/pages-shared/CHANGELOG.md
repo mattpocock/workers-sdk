@@ -1,5 +1,18 @@
 # @cloudflare/pages-shared
 
+## 0.11.0
+
+### Minor Changes
+
+- [#4051](https://github.com/cloudflare/workers-sdk/pull/4051) [`4578d647`](https://github.com/cloudflare/workers-sdk/commit/4578d647060de37a34b5f4aedbcf17b4e2d27382) Thanks [@taoky](https://github.com/taoky)! - fix: remove extension name check when generating response
+
+  Current regex logic to check whether a pathname is a file (has file extension) is causing trouble for some websites, and now \${pathname}/index.html is always checked before returning notFound().
+
+### Patch Changes
+
+- Updated dependencies [[`16cc2e92`](https://github.com/cloudflare/workers-sdk/commit/16cc2e923733b3c583b5bf6c40384c52fea04991), [`29a59d4e`](https://github.com/cloudflare/workers-sdk/commit/29a59d4e72e3ae849474325c5c93252a3f84af0d), [`8a25b7fb`](https://github.com/cloudflare/workers-sdk/commit/8a25b7fba94c8e9989412bc266ada307975f182d)]:
+  - miniflare@3.20231030.0
+
 ## 0.10.1
 
 ### Patch Changes
